@@ -1,0 +1,6 @@
+# Ignoring all PCAP files. Size's too big.
+Dataset-Files/PCAP-Captures
+# All csv files for the dataset will be uploaded in specific zip files
+Dataset-Files/Tshark-Dataset/*.csv
+#Ignoring Tutorials
+Quantum-IDS/Tutoriales

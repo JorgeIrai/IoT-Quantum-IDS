@@ -1,0 +1,26 @@
+Comando para extraer flujos TCP:
+
+tshark -r DDoS-UDP_Flood4.pcap -Y "tcp" -T fields \
+  -e tcp.stream -e tcp.srcport -e tcp.dstport \
+  -e frame.len -e ip.flags.rb -e ip.flags.df \
+  -e ip.flags.mf -e tcp.flags.res -e tcp.flags.ns \
+  -e tcp.flags.cwr -e tcp.flags.ecn -e tcp.flags.urg \
+  -e tcp.flags.ack -e tcp.flags.push -e tcp.flags.reset \
+  -e tcp.flags.syn -e tcp.flags.fin -e frame.time_epoch \
+  -e ip.ttl -e tcp.checksum.status -e ip.checksum.status \
+  -e tcp.seq_raw -e tcp.ack_raw -e tcp.window_size_value \
+  -e tcp.len -E header=y > DDoSUDPFloodTCP4.txt
+
+
+Comando para extraer flujo UDP:
+
+tshark -r DDoS-UDP_Flood4.pcap -Y "udp" -T fields \
+  -e udp.stream -e udp.srcport -e udp.dstport \
+  -e frame.len -e ip.flags.rb -e ip.flags.df \
+  -e ip.flags.mf -e tcp.flags.res -e tcp.flags.ns \
+  -e tcp.flags.cwr -e tcp.flags.ecn -e tcp.flags.urg \
+  -e tcp.flags.ack -e tcp.flags.push -e tcp.flags.reset \
+  -e tcp.flags.syn -e tcp.flags.fin -e frame.time_epoch \
+  -e ip.ttl -e udp.checksum.status -e ip.checksum.status \
+  -e tcp.seq_raw -e tcp.ack_raw -e tcp.window_size_value \
+  -e udp.length -E header=y > DDoSUDPFloodUDP4.txt
