@@ -4,8 +4,15 @@ Dataset-Files/PCAP-Captures
 Dataset-Files/Tshark-Dataset/*.csv
 # All csv files for the dataset will be uploaded in specific zip files
 Quantum-IDS/*.csv
+Quantum-IDS/QNN_IDS/*.csv
 Quantum-IDS/QSVM_implementations/*.csv
+
 Classic-IDS/*.csv
 Classic-IDS/SVM-IDS/*.csv
+Classic-IDS/NN-IDS/*.csv
+Classic-IDS/NN-IDS/
 #Ignoring Tutorials
 Quantum-IDS/Tutoriales
+*.csv
+*.pkl
+Plots/
