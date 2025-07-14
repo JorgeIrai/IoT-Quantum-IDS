@@ -15,4 +15,5 @@ Classic-IDS/NN-IDS/
 Quantum-IDS/Tutoriales
 *.csv
 *.pkl
+*.pdf
 Plots/
