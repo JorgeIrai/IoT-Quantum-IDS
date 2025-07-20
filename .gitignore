@@ -10,7 +10,6 @@ Quantum-IDS/QSVM_implementations/*.csv
 Classic-IDS/*.csv
 Classic-IDS/SVM-IDS/*.csv
 Classic-IDS/NN-IDS/*.csv
-Classic-IDS/NN-IDS/
 #Ignoring Tutorials
 Quantum-IDS/Tutoriales
 *.csv
