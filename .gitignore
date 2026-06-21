@@ -13,6 +13,6 @@ Classic-IDS/NN-IDS/*.csv
 #Ignoring Tutorials
 Quantum-IDS/Tutoriales
 *.csv
-*.pkl
 *.pdf
 Plots/
+*.pkl
