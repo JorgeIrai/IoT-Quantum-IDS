@@ -16,3 +16,5 @@ Quantum-IDS/Tutoriales
 *.pdf
 Plots/
 *.pkl
+
+Data/Dataset-v2/Basic_Reduction.ipynb
